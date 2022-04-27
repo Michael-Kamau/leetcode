@@ -56,7 +56,6 @@ def romanToInt(s):
         myList = list(s)
         while x < len(myList):
             if((x<len(myList)-1) and symbols[myList[x+1]] > symbols[myList[x]]):
-                print(symbols[myList[x+1]] - symbols[myList[x]])
                 number=number+ (symbols[myList[x+1]] - symbols[myList[x]])
                 x+=2
             else:
